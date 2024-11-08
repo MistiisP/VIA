@@ -1,0 +1,55 @@
+[
+    {
+        "adopt_from": "Azienda Agricola San Mauro",
+        "fruit_name": "Clementines",
+        "tree": "Clementine tree",
+        "origin": "Italy",
+        "farmer_full_name": "Anita Minisci",
+        "delivery_date": "2024-10-25",
+        "price": 10,
+        "minimum_kg": 5,
+        "final_price": 60,
+        "picture": "https://common.crowdfarming.com/uploaded-images/1666616474009-983f3966-2af3-47e1-912c-460ef333754c.jpg",
+        "description": ""
+
+    },
+    {
+        "adopt_from": "Loma del Gato",
+        "fruit_name": "Organic avocados",
+        "tree": "Avocado tree",
+        "origin": "Spain",
+        "farmer_full_name": "María Victoria Mingorance ",
+        "delivery_date": "2024-10-30",
+        "price": 10,
+        "minimum_kg": 4,
+        "final_price": 54,
+        "picture": "https://common.crowdfarming.com/uploaded-images/1724153349203-76599e00-4fde-4bb8-aad4-60048aec70ee.jpg",
+        "description": ""
+    },
+    {
+        "adopt_from": "Bio farma",
+        "fruit_name": "Jahoda",
+        "tree": "Jahodový keř",
+        "origin": "Česká republika",
+        "farmer_full_name": "Anna Králová",
+        "delivery_date": "2024-10-28",
+        "price": 14,
+        "minimum_kg": 2,
+        "final_price": 34,
+        "picture": "https://www.concept.cz/img/news/jahody.png",
+        "description": ""
+    },
+    {
+        "adopt_from": "Domaines De La Taste",
+        "fruit_name": "Organic clementines PGI Corsica",
+        "tree": "Clementine tree",
+        "origin": "France",
+        "farmer_full_name": "Loïc De La Taste ",
+        "delivery_date": "2024-11-01",
+        "price": 12,
+        "minimum_kg": 4,
+        "final_price": 66,
+        "picture": "https://common.crowdfarming.com/uploaded-images/1698925947326-8c21e141-2f13-4e36-bd2d-7c4919fcd95e.jpg",
+        "description": ""
+    }
+]

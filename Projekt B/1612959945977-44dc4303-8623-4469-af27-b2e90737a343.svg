@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="32px" viewBox="0 0 1440 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Wave 2</title>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Manifest_Desktop" transform="translate(0.000000, -3277.000000)" fill="#FFE9CC">
+            <g id="05.FrutaFea" transform="translate(0.000000, 3277.000000)">
+                <path d="M0,0.00523644644 L1440,0.00523644644 L1440,1.0806656 C1349.5634,0.00523644644 1118.95597,34.7030488 998.367743,31.8369021 C877.779521,28.9707555 694.058025,8.10549359 639.648039,8.10549359 C537.648039,8.10549359 480.553424,23.0340087 342.367743,23.0340087 C250.243956,23.0340087 136.121375,15.3577513 0,0.00523644644 Z" id="Wave-2" transform="translate(720.000000, 16.005236) scale(-1, 1) translate(-720.000000, -16.005236) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

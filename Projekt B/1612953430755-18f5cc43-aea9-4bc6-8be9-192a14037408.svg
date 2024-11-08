@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="24px" viewBox="0 0 1440 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Wave 1</title>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Manifest_Desktop" transform="translate(0.000000, -1813.000000)" fill="#CFE5E3">
+            <g id="03.SuperOnline" transform="translate(0.000000, 1813.000000)">
+                <path d="M0,0 L1440,0 L1440,0.974933722 C1349.5634,0 1246.80496,26.4183884 1126.21673,23.8200741 C1005.62851,21.2217598 694.058025,0.974933722 639.648039,0.974933722 C537.648039,0.974933722 489.18568,12 351,12 C258.876213,12 141.876213,8 0,0 Z" id="Wave-1"></path>
+            </g>
+        </g>
+    </g>
+</svg>
