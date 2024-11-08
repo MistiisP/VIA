@@ -2,8 +2,6 @@
 
 Projekt A je HTML 5 webová stránka inspirovaná reálnou stránkou.
 
-todo:
-B - dodělat main, produkty dodělat json
 A - dodělat to api, trochu vzhled
 
 
