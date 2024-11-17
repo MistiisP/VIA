@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #e8c6fb;
+}
+
+.vyhledavace {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(231, 150, 223);
+    box-shadow: 0 0 10px 5px magenta;   
+}
+
+.ikona {
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 400px;
+    height: auto;
+}
+
+.vyhledani {
+    justify-content: center;
+    align-items: center;
+}
+
+.vyhledani-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #000000;
+}
+
+#search {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#ingredient-search {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #722256;
+}
+
+#results {
+    margin-top: 20px;
+}
+
+#ingredientChart {
+    max-width: 350px;
+    max-height: 250px;
+    margin: 0 auto; /* Aby byl graf vystředěný */
+}
+
+
+
+
+#cocktail-details {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    text-decoration: none;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+
+}
