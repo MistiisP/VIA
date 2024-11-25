@@ -13,6 +13,10 @@ function searchCocktail() {
     cocktailDetailsDiv.innerHTML = ""; 
     ingredientResultsDiv.innerHTML = "";
     chartDiv.innerHTML = "";
+    const nonAlcohlic = document.getElementById("cocktail-non-alcoholic");
+    nonAlcohlic.innerHTML = "";
+    const Alcoholic = document.getElementById("cocktail-alcoholic");
+    Alcoholic.innerHTML = "";
 
     fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${query}`)
         .then(response => response.json())
@@ -51,7 +55,7 @@ function showCocktailDetails(cocktailId) {
                 // Zobrazení detailů o koktejlu
                 detailsDiv.innerHTML = `
                     <img src="${cocktail.strDrinkThumb}" alt="${cocktail.strDrink}">
-                    <div style="display: flex; flex-direction: column; width: 400px;">
+                    <div style="display: flex; flex-direction: column; width: 360px;">
                     <h2>${cocktail.strDrink}</h2>
                     <p><strong>Pokyny:</strong> ${cocktail.strInstructions}</p>
                     <p><strong>Sklenice:</strong> ${cocktail.strGlass}</p>
@@ -131,10 +135,6 @@ function displayIngredientChart(cocktail) {
         }
     });
     window.scrollTo({ top: 0, behavior: "smooth" });
-
-    // Nastavení velikosti grafu
-    chartDiv.style.width = "400px";
-    chartDiv.style.height = "300px";
 }
 
 
@@ -154,6 +154,10 @@ function searchIngredient() {
     cocktailDetailsDiv.innerHTML = ""; 
     ingredientResultsDiv.innerHTML = "";
     chartDiv.innerHTML = "";
+    const nonAlcohlic = document.getElementById("cocktail-non-alcoholic");
+    nonAlcohlic.innerHTML = "";
+    const Alcoholic = document.getElementById("cocktail-alcoholic");
+    Alcoholic.innerHTML = "";
 
     fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?i=${query}`)
         .then(response => {
@@ -196,15 +200,19 @@ function filterByAlcoholic() {
         const cocktailDetailsDiv = document.getElementById("cocktail-details");
         const ingredientResultsDiv = document.getElementById("ingredient-results");
         const chartDiv = document.getElementById("ingredient-chart");
+        const nonAlcohlic = document.getElementById("cocktail-non-alcoholic");
+        nonAlcohlic.innerHTML = "";
         resultsDiv.innerHTML = "";
         cocktailDetailsDiv.innerHTML = ""; 
         ingredientResultsDiv.innerHTML = "";
         chartDiv.innerHTML = "";
+        
+
     // Zavoláme API pro alkoholické koktejly
     fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic')
         .then(response => response.json())
         .then(data => {
-            const resultsDiv = document.getElementById("cocktail-results");
+            const resultsDiv = document.getElementById("cocktail-alcoholic");
             resultsDiv.innerHTML = ""; // Vyčistit předchozí výsledky
 
             if (data.drinks && data.drinks.length > 0) {
@@ -237,18 +245,19 @@ function filterByNonAlcoholic() {
         cocktailDetailsDiv.innerHTML = ""; 
         ingredientResultsDiv.innerHTML = "";
         chartDiv.innerHTML = "";
+        const Alcoholic = document.getElementById("cocktail-alcoholic");
+        Alcoholic.innerHTML = "";
     // Zavoláme API pro nealkoholické koktejly
     fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic')
         .then(response => response.json())
         .then(data => {
-            const resultsDiv = document.getElementById("cocktail-results");
+            const resultsDiv = document.getElementById("cocktail-non-alcoholic");
             resultsDiv.innerHTML = ""; // Vyčistit předchozí výsledky
 
             if (data.drinks && data.drinks.length > 0) {
                 data.drinks.forEach(cocktail => {
                     const cocktailDiv = document.createElement("div");
-                    cocktailDiv.innerHTML = `
-                    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center">
+                    cocktailDiv.innerHTML = ` <div style="display: flex; flex-direction: column; justify-content: center; align-items: center">
                         <h3>${cocktail.strDrink}</h3>
                         <img src="${cocktail.strDrinkThumb}" alt="${cocktail.strDrink}" onclick="showCocktailDetails('${cocktail.idDrink}')" />
                         </div>
@@ -263,3 +272,6 @@ function filterByNonAlcoholic() {
             console.error("Chyba při získávání dat o koktejlech:", error);
         });
 }
+
+
+
