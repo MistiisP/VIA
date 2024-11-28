@@ -77,11 +77,7 @@
 
       
 
-
-
-
-
-      <div class="containerLogin">
+    <div class="containerLogin">
         <div class="info-sectionLogin">
             <img src="https://www.crowdfarming.com/assets/img/register-benefits/tree.svg" alt="Farmer" class="icon">
             <h2>Join Us to Change Food for Good</h2>
@@ -94,13 +90,13 @@
         </div>
         <div class="form-sectionLogin">
             <h2>Create account</h2>
-            <form>
+            <form novalidate>
                 <div class="input-groupLogin">
-                    <input type="text" placeholder="First name" required>
-                    <input type="text" placeholder="Surname" required>
+                    <input type="text" name="firstName" placeholder="First name" required pattern="[A-Za-z]+" title="Only letters are allowed">
+                    <input type="text" name="surname" placeholder="Surname" required pattern="[A-Za-z]+" title="Only letters are allowed">
                 </div>
-                <input type="email" placeholder="Email address" required>
-                <input type="password" placeholder="Password" required>
+                <input type="email" name="email" placeholder="Email address" required>
+                <input type="password" name="password" placeholder="Password" minlength="6" required>
                 <div class="checkbox-groupLogin">
                     <input type="checkbox" id="terms" required>
                     <label for="terms">I have read and accept the <a href="#">conditions</a> and the <a href="#">privacy policy</a>.</label>
@@ -108,15 +104,12 @@
                 <button type="submit">Sign Up</button>
                 <hr>
                 <h3>Express registration</h3>
-                <button class="social-btn facebook">Continue with Facebook</button>
-                <button class="social-btn google">Continue with Google</button>
+                <button class="social-btn facebook" type="button">Continue with Facebook</button>
+                <button class="social-btn google" type="button">Continue with Google</button>
                 <p>Already have an account? <a href="#">Log In</a></p>
             </form>
         </div>
     </div>
-
-
-
 
 
 
